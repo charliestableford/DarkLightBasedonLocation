@@ -1,7 +1,7 @@
 const app = () => {
-    const endpoint = 'https://api.sunrise-sunset.org/json?lat=53.7267&lng=-127.6476&date=today';
 
      return getLocation = async () => {
+      const endpoint = 'https://api.sunrise-sunset.org/json?lat=53.7267&lng=-127.6476&date=today';
         const response = await fetch(endpoint)
         const data = await response.json();
         let body = document.querySelector("body");
@@ -17,9 +17,21 @@ const app = () => {
         
         // if time is evening then set to sunset, else it is sunrise
         let background = (time === "Evening") ? body = body.style.background = "black" : body = body.style.background = "white"  ;
-        console.log(background);
-         return data;
+        
+        return timeIcon = () => {
+          let sunsetImg = new Image(100, 200);
+          sunsetImg.src = 'sunset.jpg';
+          document.body.appendChild(sunsetImg);
+
+          let sunriseImg = new Image(100, 200);
+          sunriseImg.src = 'sunrise.jpg';
+          document.body.appendChild(sunriseImg);
+        }
+
+        return data;
   }
+
+  return 
 }
 
 window.addEventListener('load', (event) => {

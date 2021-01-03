@@ -22,10 +22,12 @@ const app = () => {
           let sunsetImg = new Image(50, 50);
           sunsetImg.src = 'assets/sunset.png';
           document.body.appendChild(sunsetImg);
+          sunsetImg.setAttribute("alt", "Image icon of a moon.");
 
           let sunriseImg = new Image(60, 50);
           sunriseImg.src = 'assets/sunrise.png';
           document.body.appendChild(sunriseImg);
+          sunriseImg.setAttribute("alt", "Image icon of the sun rising.");
 
           let icon = (time === "Evening") ? (sunsetImg.style.display = "block", sunriseImg.style.display = "none") : (sunriseImg.style.display = "block", sunsetImg.style.display = "none");
           console.log(icon);

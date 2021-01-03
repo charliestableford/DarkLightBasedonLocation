@@ -18,23 +18,27 @@ const app = () => {
         // if time is evening then set to sunset, else it is sunrise
         let background = (time === "Evening") ? body = body.style.background = "black" : body = body.style.background = "white"  ;
         
-        return timeIcon = () => {
-          let sunsetImg = new Image(100, 200);
-          sunsetImg.src = 'sunset.jpg';
+        // return timeIcon = () => {
+          let sunsetImg = new Image(50, 50);
+          sunsetImg.src = 'assets/sunset.png';
           document.body.appendChild(sunsetImg);
 
-          let sunriseImg = new Image(100, 200);
-          sunriseImg.src = 'sunrise.jpg';
+          let sunriseImg = new Image(60, 50);
+          sunriseImg.src = 'assets/sunrise.png';
           document.body.appendChild(sunriseImg);
-        }
+
+          let icon = (time === "Evening") ? (sunsetImg.style.display = "block", sunriseImg.style.display = "none") : (sunriseImg.style.display = "block", sunsetImg.style.display = "none");
+          console.log(icon);
+
+
+        // }
 
         return data;
-  }
-
-  return 
+  } 
 }
 
 window.addEventListener('load', (event) => {
     app(); 
     getLocation();
+    // timeIcon();
   });

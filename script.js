@@ -20,7 +20,12 @@ const app = () => {
         console.log(`sunrise: ${sunrise}`);
         
         // if time is evening then set to sunset, else it is sunrise
-        let background = (time === "Evening") ? (body.style.background = "black", body.style.color = "white") : (body.style.background = "white", body.style.color = "black")  ;
+        let background = (time === "Evening") ? (body.style.background = "black", body.style.color = "white") : (body.style.background = "white", body.style.color = "black");
+
+        let timeIconText = document.createElement('div');
+        timeIconText.appendChild(document.createTextNode('Currently residing in Vancouver, BC, Canada'));
+        document.body.appendChild(timeIconText);
+        timeIconText.setAttribute("class", "timeIconText");
         
         let sunsetImg = new Image(50, 50);
         sunsetImg.src = 'assets/sunset.png';

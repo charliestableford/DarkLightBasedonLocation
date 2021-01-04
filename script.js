@@ -20,7 +20,7 @@ const app = () => {
         console.log(`sunrise: ${sunrise}`);
         
         // if time is evening then set to sunset, else it is sunrise
-        let background = (time === "Evening") ? body = body.style.background = "black" : body = body.style.background = "white"  ;
+        let background = (time === "Evening") ? (body = body.style.background = "black", body.style.color = "white") : (body = body.style.background = "white", body.style.color = "black")  ;
         
         let sunsetImg = new Image(50, 50);
         sunsetImg.src = 'assets/sunset.png';

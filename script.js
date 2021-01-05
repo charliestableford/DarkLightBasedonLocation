@@ -20,11 +20,7 @@ const app = () => {
         currentTime.appendChild(document.createTextNode(`${currentHours}:${currentMinutes}`));
         document.body.appendChild(currentTime);
         currentTime.setAttribute("class", "currentTime");
-
-        console.log(`sunset: ${sunset}`);
-        console.log(`sunrise: ${sunrise}`);
         
-        // if time is evening then set to sunset, else it is sunrise
         let background = (time === "Evening") ? (body.style.background = "black", body.style.color = "white", currentTime.style.color="white") : (body.style.background = "white", body.style.color = "black", currentTime.style.color="black");
 
         let timeIconText = document.createElement('div');

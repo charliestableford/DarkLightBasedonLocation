@@ -41,10 +41,24 @@
 .section{
     color: white;
     display: flex;
+    justify-content: space-between;
 }
 
 .personalIcon{
     height: 130px;
     max-width: 100px;
     min-width: 100px;
+}
+
+.icon{
+    max-width: 35px;
+    min-width: 35px;
+    height: 32px;
+    margin: 5px;
+}
+
+.information{
+    color: white;
+    width: 70%;
+    margin-right: 10%;
 }

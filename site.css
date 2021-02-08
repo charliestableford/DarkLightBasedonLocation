@@ -30,8 +30,12 @@
 }
 
 .iconMenu{
-    margin-right: 0;
-    
+    margin-right: 0; 
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
 }
 
 .section{

@@ -4,6 +4,7 @@ const app = () => {
       const endpoint = 'https://api.sunrise-sunset.org/json?lat=53.7267&lng=-127.6476&date=today';
         const response = await fetch(endpoint)
         const data = await response.json();
+
         let body = document.querySelector("body");
         let current = new Date();
         let time = (current.getHours()>=17) ? "Evening" : "Daytime";

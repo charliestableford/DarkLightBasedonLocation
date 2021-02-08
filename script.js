@@ -9,8 +9,11 @@ const app = () => {
         let time = (current.getHours()>=17) ? "Evening" : "Daytime";
         console.log(`this is the time: ${time}`);
 
+        // check this later - not the right time?
         let sunset = data.results.sunset;
         let sunrise = data.results.sunrise;
+        console.log(sunrise);
+        console.log(sunset);
 
         let currentHours = current.getHours();
         let currentMinutes = current.getMinutes();
@@ -44,6 +47,7 @@ const app = () => {
 
         return data;
   } 
+  
 }
 
 window.addEventListener('load', (event) => {

@@ -23,3 +23,17 @@
     right: 70px;
     font-size: 10px;
 }
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.iconMenu{
+    justify-content: flex-end;
+}
+
+.section{
+    color: white;
+    display: flex;
+}

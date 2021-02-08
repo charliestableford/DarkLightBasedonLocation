@@ -6,6 +6,7 @@ const app = () => {
         const data = await response.json();
 
         let body = document.querySelector("body");
+        let timing = document.querySelector("timing");
         let current = new Date();
         let time = (current.getHours()>=17) ? "Evening" : "Daytime";
         console.log(`this is the time: ${time}`);

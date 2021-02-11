@@ -75,7 +75,7 @@ a{
     display: flex;
     margin-bottom: 2em;
     font-family: playfair;
-    font-size:
+    /* font-size: */
 }
 
 .personalIcon{
@@ -103,12 +103,17 @@ a{
     margin-right: 5%;
     font-family: 'Playfair Display', serif;
     font-size: 1.5em;
+    text-align: center;
 }
 
 .menu > a {
     text-decoration: none;
     color: white;
 
+}
+
+.menu{
+    align-self: flex-end;
 }
 
 hr{

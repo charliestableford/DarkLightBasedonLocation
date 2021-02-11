@@ -35,6 +35,8 @@ a{
 .wrapper{
     display: flex;
     flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
     margin: 20px;
     font-family: 'Open Sans', sans-serif;
 }
@@ -53,6 +55,7 @@ a{
     display: flex;
     justify-content: space-between;
     margin-bottom: 2em;
+    height: 300px;
 }
 
 .section-sm{
@@ -67,6 +70,7 @@ a{
     display: flex;
     justify-content: space-around;
     margin-bottom: 2em;
+    height: 300px
 }
 
 .space-even{
@@ -141,4 +145,8 @@ hr{
 
 .resume{
     margin: 200px;
+}
+
+header{
+    height: 100vh;
 }

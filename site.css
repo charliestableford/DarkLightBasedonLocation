@@ -74,6 +74,11 @@ a{
     font-size: 1.2em;
 }
 
+.title{
+    color: white;
+    align-self: flex-end;
+}
+
 .section-mid{
     display: flex;
     justify-content: space-around;
@@ -107,12 +112,11 @@ a{
     max-width: 45px;
     min-width: 45px;
     height: 42px;
+    margin-left: 35px;
 }
 
 .information{
     color: white;
-    width: 80%;
-    height: 300px;
     font-family: 'Playfair Display', serif;
     font-size: 1.5em;
     text-align: center;

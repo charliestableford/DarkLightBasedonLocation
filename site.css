@@ -58,6 +58,13 @@ a{
     height: 250px;
 }
 
+.work-section{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
 .section-sm{
     color: white;
     display: flex;

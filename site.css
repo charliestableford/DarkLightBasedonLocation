@@ -127,6 +127,8 @@ a{
     font-family: 'Playfair Display', serif;
     font-size: 1.5em;
     text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .menu > a {
@@ -163,9 +165,23 @@ hr{
 }
 
 .resume{
-    margin: 200px;
+    margin: 100px;
 }
 
 header{
     height: 100vh;
+}
+
+@media only screen and (min-width: 1200px){
+    .resume{
+        margin: 200px;
+    }
+}
+
+@media only screen and (min-width: 1400px){
+    .resume{
+        margin-left: 400px;
+        margin-right: 400px;
+        margin-top: 50px;
+    }
 }

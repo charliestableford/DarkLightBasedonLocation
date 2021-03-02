@@ -83,7 +83,13 @@ a{
 
 .title{
     color: white;
-    align-self: flex-end;
+    font-size: 4.5em;
+    /* align-self: flex-end; */
+    font-family: 'Reenie Beanie', cursive;
+    position: absolute;
+    top: 260px;
+    z-index: -1;
+    left: 100px;
 }
 
 .section-mid{

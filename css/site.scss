@@ -1,5 +1,5 @@
 body{
-    background: black !important;
+    background: #12192d !important;
 }
 
 .sunsetImg{
@@ -83,11 +83,12 @@ a{
 
 .title{
     color: white;
-    font-size: 4.5em;
+    font-size: 5em;
     /* align-self: flex-end; */
     font-family: 'Reenie Beanie', cursive;
     position: absolute;
-    top: 260px;
+    top: 200px;
+    opacity: 1;
     z-index: -1;
     left: 100px;
 }

@@ -197,7 +197,6 @@ header{
     -ms-flex-preferred-size: 0;
     box-sizing: border-box;
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 auto;
     padding-right: .5rem;
     padding-left: .5rem;
     flex-basis: 30.333333%;
